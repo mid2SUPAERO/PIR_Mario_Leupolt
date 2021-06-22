@@ -20,7 +20,7 @@ def scalarPredictionsKeras(airfoil_modeshapes, Ma, alpha):
     #loading of the models
     modelcd = load_model('C:/Users/Mario/OneDrive/Universität/Semester 8 21 SoSe/PIR/Material/Subsonic/models/cd.h5', compile = True)
     modelcl = load_model("C:/Users/Mario/OneDrive/Universität/Semester 8 21 SoSe/PIR/Material/Subsonic/models/cl.h5", compile = True)
-    modelcm = load_model("C:/Users/Mario/OneDrive/Universität/Semester 8 21 SoSe/PIR/Material/Subsonic/models/cm2.h5", compile = True)
+    modelcm = load_model("C:/Users/Mario/OneDrive/Universität/Semester 8 21 SoSe/PIR/Material/Subsonic/models/cm.h5", compile = True)
 
     # input array in neural network is created out of airfoil mode shapes, Mach number and alpha
     input_array = np.zeros(shape=(1,16))
